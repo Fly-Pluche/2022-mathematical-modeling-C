@@ -1,0 +1,62 @@
+\begin{thebibliography}{10}
+
+\bibitem{arsham2011bartlett}
+Hossein Arsham and Miodrag Lovric.
+\newblock Bartlett's test.
+\newblock {\em International encyclopedia of statistical science}, 1:87--88,
+  2011.
+
+\bibitem{arthur2006slow}
+David Arthur and Sergei Vassilvitskii.
+\newblock How slow is the k-means method?
+\newblock In {\em Proceedings of the twenty-second annual symposium on
+  Computational geometry}, pages 144--153, 2006.
+
+\bibitem{arthur2006k}
+David Arthur and Sergei Vassilvitskii.
+\newblock k-means++: The advantages of careful seeding.
+\newblock Technical report, Stanford, 2006.
+
+\bibitem{daffertshofer2004pca}
+Andreas Daffertshofer, Claudine~JC Lamoth, Onno~G Meijer, and Peter~J Beek.
+\newblock Pca in studying coordination and variability: a tutorial.
+\newblock {\em Clinical biomechanics}, 19(4):415--428, 2004.
+
+\bibitem{de2013using}
+Joost~CF De~Winter.
+\newblock Using the student's t-test with extremely small sample sizes.
+\newblock {\em Practical Assessment, Research, and Evaluation}, 18(1):10, 2013.
+
+\bibitem{dziuban1974correlation}
+Charles~D Dziuban and Edwin~C Shirkey.
+\newblock When is a correlation matrix appropriate for factor analysis? some
+  decision rules.
+\newblock {\em Psychological bulletin}, 81(6):358, 1974.
+
+\bibitem{hommerberg2011persuasiveness}
+Charlotte Hommerberg.
+\newblock {\em Persuasiveness in the discourse of wine: The rhetoric of Robert
+  Parker}.
+\newblock PhD thesis, Linnaeus University Press, 2011.
+
+\bibitem{jeong2009ipca}
+Dong~Hyun Jeong, Caroline Ziemkiewicz, Brian Fisher, William Ribarsky, and
+  Remco Chang.
+\newblock ipca: An interactive system for pca-based visual analytics.
+\newblock In {\em Computer Graphics Forum}, volume~28, pages 767--774. Wiley
+  Online Library, 2009.
+
+\bibitem{kanungo2004local}
+Tapas Kanungo, David~M Mount, Nathan~S Netanyahu, Christine~D Piatko, Ruth
+  Silverman, and Angela~Y Wu.
+\newblock A local search approximation algorithm for k-means clustering.
+\newblock {\em Computational Geometry}, 28(2-3):89--112, 2004.
+
+\bibitem{young1977proof}
+Ian~T Young.
+\newblock Proof without prejudice: use of the kolmogorov-smirnov test for the
+  analysis of histograms from flow systems and other sources.
+\newblock {\em Journal of Histochemistry \& Cytochemistry}, 25(7):935--941,
+  1977.
+
+\end{thebibliography}

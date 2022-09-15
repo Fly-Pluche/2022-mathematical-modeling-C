@@ -1,0 +1,342 @@
+\documentclass[UTF8]{ctexart}
+
+\usepackage{listings}
+\usepackage{color,xcolor} 
+\usepackage{colortbl}
+\usepackage{graphicx}
+\usepackage{booktabs} %绘制表格
+\usepackage{caption2} %标题居中
+\usepackage{geometry}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{subfigure} 
+\usepackage{longtable}
+\usepackage{abstract}
+\usepackage{multirow}
+\usepackage{enumerate}
+\usepackage{float}
+\usepackage{type1cm}
+%for long table
+\usepackage{longtable}
+
+%for table toprule line
+\usepackage{booktabs}
+% \usepackage{zhnumber} % change section number to chinese
+% \renewcommand\thesection{\zhnum{section}}
+% \renewcommand \thesubsection {\arabic{section}}
+
+
+%伪代码
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{amsmath}
+\renewcommand{\algorithmicrequire}{\textbf{输入:}}  % Use Input in the format of Algorithm
+\renewcommand{\algorithmicensure}{\textbf{过程:}} % Use Output in the format of Algorithm
+
+\usepackage{xltxtra}
+\usepackage{mflogo,texnames}
+\usepackage{amssymb}
+
+%附录代码
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    numbers=left, 
+    numberstyle= \tiny, 
+    keywordstyle= \color{ blue!70},
+    commentstyle= \color{red!50!green!50!blue!50}, 
+    frame=shadowbox, % 阴影效果
+    rulesepcolor= \color{ red!20!green!20!blue!20} ,
+    escapeinside=``, % 英文分号中可写入中文
+    xleftmargin=2em,xrightmargin=2em, aboveskip=1em,
+    framexleftmargin=2em
+} 
+
+\pagestyle{plain} %页眉消失
+
+\geometry{a4paper,left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}%设置页面尺寸
+\lstset{
+		numbers=left, %设置行号位置
+		numberstyle=\tiny, %设置行号大小	
+		keywordstyle=\color{blue}, %设置关键字颜色
+		commentstyle=\color[cmyk]{1,0,1,0}, %设置注释颜色
+		escapeinside=``, %逃逸字符(1左面的键)，用于显示中文
+		breaklines, %自动折行
+		extendedchars=false, %解决代码跨页时，章节标题，页眉等汉字不显示的问题
+		xleftmargin=1em,xrightmargin=1em, aboveskip=1em, %设置边距
+		tabsize=4, %设置tab空格数
+		showspaces=false %不显示空格
+	}
+
+
+		% \begin{figure}[!htbp]\centering
+		% \includegraphics[width=1\textwidth]{img} % 图片相对位置
+		% \label{fig:figure 0} % 图片标签
+		% \end{figure}
+
+
+\title{\textbf{标题}}
+% \date{August 24, 2022}
+\date{} %关闭日期时间的显示
+
+\begin{document}
+\maketitle{}
+\renewcommand{\abstractname}{\Large 摘要\\}   %摘要部分
+\begin{abstract}
+	\normalsize
+    \CJKfamily{song}
+    \fontsize{12pt}{18pt}
+	
+    % 摘要内容
+    % 摘要内容
+    % 摘要内容
+    % 摘要内容
+
+
+	\textbf{关键字}： ;  ;  ;  ;  ;   %关键词
+\end{abstract}
+\thispagestyle{empty}    %该页不编码且独立为一页
+\newpage
+
+\setcounter{page}{1}  %此页开始编码
+
+%第一部分
+\section{问题重述}
+
+\subsection{问题背景}
+
+
+\subsection{问题提出}
+
+
+
+
+
+
+%第二部分
+\section{问题分析}
+\subsection{问题一的分析}
+
+
+
+
+\subsection{问题二的分析}
+
+
+
+
+\subsection{问题三的分析}
+
+
+
+
+\subsection{问题四的分析}
+
+
+%第三部分
+\section{模型假设}
+1.假设......................
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+%第四部分
+\section{符号说明}
+
+
+		\begin{table}[H] 
+		\begin{center}  
+		\begin{tabular}{c|c|c}    
+		\toprule[2pt]    
+		\rowcolor[gray]{0.8}
+
+		\multicolumn{1}{m{8em}}{\centering 符号}  &\multicolumn{1}{m{15em}}{\centering 基本说明} &\multicolumn{1}{m{10em}}{\centering 单位}\\
+
+		%直接用合并单元格的方法来实现自定义列宽的同时，使文字居中对齐
+
+		\midrule[1.3pt]
+		    $\alpha$                                & x        & | \\
+			$\lambda$                                & x        & |       \\
+			$\theta$                                 & x        & |            \\
+
+
+		\bottomrule[2pt]   
+		\end{tabular}  
+		\end{center}
+		\end{table}
+
+
+
+
+%第五部分
+\section{问题一的模型建立与求解}
+\subsection{问题分析}
+
+
+
+\subsubsection{模型建立}
+
+
+
+\subsubsection{模型求解}
+
+\textbf{$step1:$}
+
+\textbf{$step2:$}
+
+\textbf{$step3:$}
+
+\textbf{$step4:$}
+
+
+
+
+
+
+%第六部分
+\section{问题二的模型建立与求解}
+\subsection{问题分析}
+
+
+
+\subsubsection{模型建立}
+
+
+
+\subsubsection{模型求解}
+
+\textbf{$step1:$}
+
+\textbf{$step2:$}
+
+\textbf{$step3:$}
+
+\textbf{$step4:$}
+
+
+
+
+
+
+
+%第七部分
+\section{问题三的模型建立与求解}
+\subsection{问题分析}
+
+
+
+\subsubsection{模型建立}
+
+
+
+\subsubsection{模型求解}
+
+\textbf{$step1:$}
+
+\textbf{$step2:$}
+
+\textbf{$step3:$}
+
+\textbf{$step4:$}
+
+
+%第八部分
+\section{问题四的模型建立与求解}
+\subsection{问题分析}
+
+
+
+\subsubsection{模型建立}
+
+
+
+\subsubsection{模型求解}
+
+\textbf{$step1:$}
+
+\textbf{$step2:$}
+
+\textbf{$step3:$}
+
+\textbf{$step4:$}
+
+%第九部分
+%此处看情况，多少个模型写多少个评价
+\section{模型的评价}
+\subsection{模型一}
+\textbf{优点:}
+
+
+\textbf{缺点:}
+
+\subsection{模型二}
+\textbf{优点:}
+
+
+\textbf{缺点:}
+
+\subsection{模型三}
+\textbf{优点:}
+
+
+\textbf{缺点:}
+
+\subsection{模型四}
+\textbf{优点:}
+
+
+\textbf{缺点:}
+
+
+%第十部分
+\section{参考文献}
+\noindent{[1]姜启源，谢金星，叶俊，数学模型（第四版），北京：高等教育出版社，2011.1}
+
+\noindent{[2] 司宛玲，司守奎，数学建模简明教程[M]北京：国防工业出版社，2019,185-189}
+
+\noindent{[3] 韩中庚，数学建模方法及其应用（第二版）[M]北京：高等教育出版社，2010,163-171}
+\noindent{}
+\noindent{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\newpage %参考文献完后重启一页
+
+
+
+
+% \clearpage
+% \bibliographystyle{plain}
+% \bibliography{ref}%ref指向自己创建的ref.bib
+% % IoU\cite{zheng2020distance}
+% \clearpage
+
+%最后一部分
+\section{附录}
+\subsection{代码}
+
+\lstset{language=python}
+\begin{lstlisting}
+	
+\end{lstlisting}
+
+
+\end{document}
