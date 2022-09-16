@@ -34,7 +34,13 @@ TODO:表一剔除：19 48 40 58 （颜色缺失）：分化严重无颜色
 
 ![image-20220915193903724](C:/Users/BlackFriday/AppData/Roaming/Typora/typora-user-images/image-20220915193903724.png)
 
+#### label
 
+0:无风化
+1:风化
+
+0:高钾
+1:铅钡
 
 ## 思路
 
