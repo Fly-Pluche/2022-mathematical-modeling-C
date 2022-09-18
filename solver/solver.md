@@ -35,4 +35,15 @@
       2. 散点图，饼图等
       3. SPSSPRO中根据不同功能对不同图标进行分类
 5. 根据题意进行数据特征工程
-5. 附录贴每题的结果
+6. 附录贴每题的结果
+7. 归一化
+8. 表头，图标
+9. 序号
+10. 引用：
+    - 模型基础的流程Telikani A, Tahmassebi A, Banzhaf W, et al. Evolutionary machine learning: A survey[J]. ACM Computing Surveys (CSUR), 2021, 54(8): 1-35.
+    - 55:Shenkai Gu and Yaochu Jin. 2014. Generating diverse and accurate classifier ensembles using multi-objective op-timization. InProceedings of the IEEE Symposium on Computational Intelligence in Multi-Criteria Decision-Making(MCDM). IEEE, 9–15.
+    - 146:ictor Henrique Alves Ribeiro and Gilberto Reynoso-Meza. 2020. Ensemble learning by means of a multi-objective optimization design approach for dealing with imbalanced data sets.Exp. Syst. Applic.147 (2020), 113232.
+
+11. 附录
+12. 查重
+13. 
