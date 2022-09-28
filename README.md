@@ -2,6 +2,41 @@
 
 Working Tree：
 
+
+├───CUMCM2022支撑材料
+│   └───excel
+│       ├───extract
+│       │   ├───1
+│       │   ├───2
+│       │   ├───3
+│       │   ├───4
+│       │   └───data_imput
+│       ├───img
+│       └───result
+│           ├───1
+│           ├───2
+│           ├───3
+│           ├───4
+│           └───data_deal
+├───problem
+├───solver
+│   └───excel
+│       ├───extract
+│       │   ├───1
+│       │   ├───2
+│       │   ├───3
+│       │   ├───4
+│       │   └───data_imput
+│       └───result
+│           ├───1
+│           ├───2
+│           ├───3
+│           ├───4
+│           └───data_deal
+└───template
+    └───img
+
+
 - Problem：存放C题题目以及资料
 - CUMCM2022支撑材料：最后提交的支撑材料
   - README.md(具体看这个)
@@ -19,10 +54,4 @@ Working Tree：
 解题过程中使用的软件：
 
 VsCode，Excel，SPSS，SPSSPRO，Visio，WPS，PowerPoint
-
-
-
-
-
-
 
