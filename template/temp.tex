@@ -106,7 +106,7 @@
 
     针对问题三，联合表单二、三对表单三使用随机森林填补缺失值，设计集成模型StackingCVClassifier，并组合LGBMClassifier 、LogisticRegression、SVC等七个模型为进行软投票集成，设置五折交叉检验对泛化能力进行评估，穷举寻优找到最优的分类预测结果，在数据集上取得了极其优秀的表现。使用集成模型对表单三中未分类的样品进行了预测，结果见附录。同问题二使用Salib进行敏感性分析，并计算敏感度SE及特异性SP。
 
-    针对问题四，对表单的数据进行分类，定高钾和铅钡为第一级，定是否风化为第二级。完成分级后进行线性诊断判断数据是非线性的，采用灰色关联分析模型分析划分的四类样本群，得到各个成分之间的关联关系。同时进行多配对 Friedman 检测和 Eemenyi 事后检测，得到各个成分之间的差异性分析结果。
+    针对问题四，对表单的数据进行分类，定高钾和铅钡为第一级，定是否风化为第二级。完成分级后进行线性诊断判断数据是非线性的，采用灰色关联分析模型分析划分的四类样本群，得到各个成分之间的关联关系。同时进行多配对 Friedman 检测和 Nemenyi 事后检测，得到各个成分之间的差异性分析结果。
 
     \vspace{4em}
     \thispagestyle{empty}
@@ -838,10 +838,11 @@
 
             2.风化铅钡成分中氧化钡占比在12.3$\%$ $\sim$ 14.7$\%$,五氧化二磷8.72$\%$$\sim$ 13.78$\%$
         即可判断为风化铅钡玻璃。
+
         3.无风化高钾成分中，氧化钾在8.3$\%$ $\sim$ 15.3$\%$，氧化铝在9.7$\%$ $\sim$ 12.71$\%$，
         即可判断为无风化高钾玻璃。
 
-        2.无风化铅钡的成分中，氧化铅在7.31$\%$ $\sim$14.7$\%$，氧化钡在8.11$\%$ $\sim$ 12.66$\%$，
+        4.无风化铅钡的成分中，氧化铅在7.31$\%$ $\sim$14.7$\%$，氧化钡在8.11$\%$ $\sim$ 12.66$\%$，
         氧化铝在6.31$\%$ $\sim$10.15$\%$之间即可判断为无风化铅钡玻璃，
 
 
@@ -1044,6 +1045,7 @@ $SiO_2-Na_2O$的指数都小于0，说明随着样本数量的增加，它们的
 
 集成学习策略应始终提供准确和多样化模型之间的权衡，这通过误差-歧义分解进行总结。这意味着集成的泛化误差是由所有个人错误和歧义，可以尝试通过减少泛化误差和增加每个个体的模糊性来减少整体泛化误差。我们考虑采用加权平均的方法来处理集合，集合的每个候选模型的最佳权重可以通过进化成员组合获得。据此，根据模型的基本模型在数据集上的表现进行加权，执行加权多数投票方案，以此优化分类结果。权重分配公式如下：
 
+% TODO:
 \begin{equation}
     W_i = \frac{A_i}{\sum_{i=1}^7 A_i}
 \end{equation}
@@ -2295,7 +2297,7 @@ from sklearn.metrics import roc_auc_score, precision_score, recall_score
 # %%
 #  Voting
 data = pd.read_excel(
-    'D://workspace//mathematical_modeling//CUMCM2022//solver//excel//extract//3//data_merage.xlsx'
+    'D://workspace//CUMCM2022//solver//excel//extract//3//data_merage.xlsx'
 )
 # data = pd.read_csv('D://workspace//mathematical_modeling//test_2//solver//excel//extract//1//第一问特征提取.csv',
 #                    encoding='utf-8',
@@ -2324,7 +2326,7 @@ x_train, x_test, y_train, y_test = train_test_split(x,
                                                     random_state=20,
                                                     shuffle=True)
 
-# (x - u) / s  归一化
+
 tranfer = StandardScaler()
 x = tranfer.fit_transform(x)
 x_train = tranfer.transform(x_train)

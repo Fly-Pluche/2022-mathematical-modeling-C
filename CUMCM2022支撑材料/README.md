@@ -32,5 +32,5 @@ analysis.ipynb: info,describe,pandas_profiling
 
 ## 第四题
 
-4.ipynb：使用find_frequent_patterns，没有用上。
+4.ipynb：使用find_frequent_patterns，只是某个尝试，没有用上。
 使用SPSS，SPSSPRO等完成
