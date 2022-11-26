@@ -67,3 +67,4 @@ VsCode，Excel，SPSS，SPSSPRO，Visio，WPS，PowerPoint
 
 
 
+requirement.txt有相关的包的环境，如果有冲突可以自行查找。
